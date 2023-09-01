@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <hr>
+    <form action="./submit.html">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name*</label><br>
+            <input type="text" autocomplete="on" id="fullName" name="fullName" placeholder="Enter full name" value="" required/><br>
+
+            <!-- for attributes of label tag and id attribute of form tag are connected to each other. name attribute of input tag is used to store the user's input once the form is submitted.  -->
+            <br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" value="" placeholder="Enter email">
+            <br>
+            <br>
+            <label for="mnumber">Mobile Number</label><br>
+            <input type="number" id="mnumber" name="mnumber" placeholder="Enter mobile number"  value="">
+        </fieldset>
+        <br>
+        <br>
+        <label for="password">Password</label><br>
+        <input type="password" disabled id="password" name="password" placeholder="Enter password"  value="">
+        <br>
+        <br>
+
+        <label for="date">Date</label>
+        <input type="datetime-local" id="date" name="date" value="date">
+
+        <br><br>
+        <label for="courses">Choose Course</label>
+        <select name="courses" id="courses">
+            <!-- <option value="" hidden></option> -->
+            <option disabled selected value> -- select an option -- </option>
+            <option value="fs">Full Stack</option>
+            <option value="fe" >Front End</option>
+            <option value="be" >Backend</option>
+        </select>
+
+        <br>
+        <br>
+        Gender: 
+        <input type="radio" id="male" name="gender" value="male" >
+        <label for="male">MALE</label>
+        <input type="radio" id="female" name="gender" value="female" >
+        <label for="female">FEMALE</label>
+
+
+        <br>
+        <br>
+        Technologies: 
+        <input autofocus type="checkbox" id="html" name="tech" value="HTML" >
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="tech" value="CSS" >
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="tech" value="JS" >
+        <label for="js">JS</label>
+
+        <br>
+        <br>
+        <label>Choose Background Color</label>
+        <input type="color">
+        <br>
+        <br>
+        <label>Enter URL</label>
+        <input type="url">
+
+        <br>
+        <br>
+        <textarea name="description" cols="30" rows="20" ></textarea>
+        <br>
+        <br>
+        * required fields
+        <br>
+        <!-- <input type="submit"/> -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
